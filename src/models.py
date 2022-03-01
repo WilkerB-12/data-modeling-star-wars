@@ -27,7 +27,7 @@ class Character(item):
     mass = Column(Integer)
     starship = Column(String(250))
     vehicles = Column(String(250))
-    parent1=relationship("Favorite",back_populates="parent1")
+    children1=relationship("Favorite",back_populates="parent1")
 
 class Planet(item):
     __tablename__= 'planet'
